@@ -6,24 +6,18 @@ using System.Threading.Tasks;
 
 namespace SuperMarket
 {
-    public class Product
+    public abstract class Product
     {
-        private string _Description;
-        private int _Id;
-        private decimal _Price;
-        private decimal _Tax;
+        public string Description { get; set; }
+        public int Id { get; set; }
+        public decimal Price { get; set; }
+        public double Tax { get; set; }
 
-        public Product(string Description,int Id,decimal Price,decimal Tax)
-        {
-            _Description = _Description;
-            _Id = Id;
-            _Price = Price;
-            _Tax = Tax;
-        }
+        public abstract decimal ValueToPay();
 
         public override string ToString()
         {
-            return $"{_Id}\n{_Description}\n{_Price}\n{_Tax}";
+            return $"codigo:{Id}/nDescription:{Description}/n{Price}/n{Tax}";
         }
     }
 }
