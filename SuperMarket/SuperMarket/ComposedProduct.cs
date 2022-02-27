@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace SuperMarket
     public class ComposedProduct : Product
     {
         public float Discount { get; set; }
-        public int MyProperty { get; set; }
+        public  ICollection Products { get; set; }
         public override decimal ValueToPay()
         {
             return Price;
