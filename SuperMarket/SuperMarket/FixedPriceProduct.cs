@@ -5,7 +5,7 @@
 
         public override decimal ValueToPay()
         {
-            throw new NotImplementedException();
+            return Price;
         }
         public override string ToString()
         {
