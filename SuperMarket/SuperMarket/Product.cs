@@ -17,7 +17,7 @@ namespace SuperMarket
 
         public override string ToString()
         {
-            return $"codigo:{Id}/nDescription:{Description}/n{Price}/n{Tax}";
+            return $"{Id} {Description}";
         }
     }
 }

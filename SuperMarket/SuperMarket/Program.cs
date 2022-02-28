@@ -46,3 +46,9 @@ Product product5 = new ComposedProduct()
 
 
 Console.WriteLine(product1);
+Console.WriteLine(product2);
+Console.WriteLine(product3);
+Console.WriteLine(product4);
+Console.WriteLine(product5);
+
+

@@ -17,7 +17,7 @@ namespace SuperMarket
         }
         public override string ToString()
         {
-            return $"{base.ToString()}/n Value to pay:{ValueToPay()}";
+            return $"{base.ToString()}\n Value to pay:{ValueToPay()}";
         }
     }
 }
