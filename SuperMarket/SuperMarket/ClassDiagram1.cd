@@ -6,6 +6,7 @@
       <HashCode>AAACAAAAAQAgAAAEAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="SuperMarket.FixedPriceProduct">
     <Position X="3.5" Y="0.5" Width="1.5" />
@@ -17,7 +18,7 @@
   <Class Name="SuperMarket.VariablePriceProduct">
     <Position X="6.25" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAAgBAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAAAAQgAAAAAA=</HashCode>
       <FileName>VariablePriceProduct.cs</FileName>
     </TypeIdentifier>
   </Class>

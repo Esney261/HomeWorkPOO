@@ -5,7 +5,7 @@
 
         public override decimal ValueToPay()
         {
-            return Price;
+            return Price*(decimal)Tax+Price;
         }
         public override string ToString()
         {

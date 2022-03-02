@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket
 {
-    public abstract class Product
+    public abstract class Product:IPay
     {
         public string Description { get; set; }
         public int Id { get; set; }
