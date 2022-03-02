@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 namespace SuperMarket
 {
     public class Invoice : IPay
-    { 
-        
-        public List<Product > productsAcc = new List<Product>();
-        
+
+    {
+        public Invoice()
+        { }
+        public List<Product> products = new List<Product>();
+
         public decimal ValueToPay()
         {
-           decimal Accumulator = 0;
-            
-            foreach (Product item in productsAcc)
+            decimal Accumulator = 0;
+
+            foreach (Product item in products)
             {
                 Accumulator += item.ValueToPay();
             }
@@ -23,10 +25,10 @@ namespace SuperMarket
         }
         public override string ToString()
         {
-            foreach (Product item in productsAcc)
+            foreach (Product item in products)
             {
                 Console.WriteLine(item.ToString());
-               
+
 
             }
             return $"                ==========================" +
@@ -35,8 +37,9 @@ namespace SuperMarket
 
         public void AddProduct(Product product)
         {
-            productsAcc.Add(product);
+            products.Add(product);
         }
-    }
+    } 
+    
    
 }
